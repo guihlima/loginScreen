@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body, html{
+    /* height: 100%; */
+    /* background-image: linear-gradient(to bottom, #7336d3, #7838cf, #7c3aca, #803dc6, #833fc2); */
+    background-image: linear-gradient(to right top, #845ec2, #7466c8, #626ecc, #4e74cf, #377ad0, #247fce, #1183ca, #0087c6, #008abd, #008cb3, #008ea7, #008e9b);
+    color: #FFF;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+
+.section__login{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    
+}
+
+#section__title{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.section__form #section__user, #section__pass{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.section__label{
+    /* margin-top: 20px; */
+    /* margin-bottom: 10px; */
+}
+
+#section__user input, #section__pass input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    background: none;
+    
+}
+
+#input__user, #input__pass{
+    
+    width: 350px;
+    height: 50px;
+    background-color: #FFF;
+    display: flex;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: rgb(180, 176, 176);
+}
+
+#icon__user, #icon__passVisible{
+    display: flex;
+    align-self: center;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+#forgot__pass{
+    font-size: 12px;
+    /* display: flex;
+    justify-content: flex-end; */
+    text-align: right;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+#section__btn{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    color: #FFF;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+#create__account{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#create__account a{
+    color:rgb(13, 212, 13);
+    margin-left: 3px;
+}
+
+/* Para dispositivos pequenos */
+@media screen and (max-width: 414px) {
+    body {
+        height:100vh;
+    }
+    .main{
+        
+    }
+
+    .section__login{
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center; */
+        width: 80%;
+        /* flex-direction: column; */
+        /* border: 1px solid #FFF; */
+        /* background: rgba(255, 255, 255, 0.4); */
+    }
+
+    #section__title{
+        /* margin-bottom: 20px;
+        font-size: 35px; */
+    }
+
+    .section__label{
+        /* margin-bottom: 10px; */
+    }
+    
+    #section__user, #section__pass{
+        /* display: flex;
+        flex-direction: column; */
+        /* width: 100%; */
+    }
+
+    #section__user input, #section__pass input{
+        /* width: 100%; */
+        height: 40px;
+        /* padding: 10px; */
+        /* border: none; */
+        /* outline: none; */
+        /* margin-bottom: 15px; */
+        /* background: none; */
+        
+    }
+
+    #input__user, #input__pass{
+    
+        /* background-color: #FFF; */
+        width: 250px;
+        height: 40px;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* display: flex; */
+        /* height: 50px;
+        background-color: #FFF;
+        
+        border-radius: 10px; */
+    }
+
+    #icon__user, #icon__passVisible{
+        /* display: flex; */
+        /* align-self: center; */
+        /* margin-right: 10px; */
+        /* font-size: 20px; */
+        /* cursor: pointer; */
+        /* color: #000; */
+    }
+
+    #forgot__pass{
+        /* font-size: 12px; */
+        /* margin-bottom: 10px; */
+    }
+    
+    #section__btn{
+        /* width: 250px; */
+        height: 40px;
+        
+        /* border-radius: 10px; */
+        /* background: none; */
+        /* color: #FFF; */
+        /* margin-bottom: 10px; */
+    }
+
+    #create__account a{
+        /* color:rgb(13, 212, 13); */
+        /* margin-left: 3px; */
+    }
+}
+
+/* Para dispositivos médios */
+@media screen and (min-width: 568px) {
+    .main{
+        /* background-color: red; */
+    }
+
+    .section__login{
+        width: 80%;
+    }
+
+    #section__user{
+        margin-bottom: 30px;
+    }
+
+    #forgot__pass{
+        margin-top: 10px;
+    }
+
+    #section__btn{
+        
+        height: 40px;
+        
+        /* border-radius: 10px; */
+        /* background: none; */
+        /* color: #FFF; */
+        /* margin-bottom: 10px; */
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .main{
+        /* background-color: pink; */
+    }
+}
+
+/* Para dispositivos grandes */
+@media screen and (min-width: 1024px){
+    .main{
+        /* background-color: green; */
+    }
+}
