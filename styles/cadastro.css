@@ -30,7 +30,7 @@ body, html{
 
 .section__login{
     /* width: 40%; */
-    height: 500px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ input::placeholder{
     color: rgb(180, 176, 176);
 }
 
-#icon__user, #icon__passVisible{
+#icon__user, #icon__passVisible,#icon__email{
     display: flex;
     align-self: center;
     margin-right: 10px;
@@ -112,14 +112,18 @@ input::placeholder{
     align-items: center;
     margin: 0 auto;
     font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-#create__account{
+#login__account{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+      
 }
-#create__account a{
+#login__account a{
     color:#1744a7;
     margin-left: 3px;
 }
