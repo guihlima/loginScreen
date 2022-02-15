@@ -28,7 +28,7 @@ body, html{
 
 
 .section__login{
-    width: 40%;
+    /* width: 40%; */
     height: 500px;
     display: flex;
     justify-content: center;
@@ -253,5 +253,9 @@ input::placeholder{
 @media screen and (min-width: 1024px){
     .main{
         /* background-color: green; */
+    }
+
+    .section__login{
+        width: 40%;
     }
 }
